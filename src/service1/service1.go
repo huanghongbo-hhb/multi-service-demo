@@ -24,6 +24,7 @@ import (
 
 func hello(w http.ResponseWriter, req *http.Request) {
 
+	log.Printf("Project bot auto-review test: request from %d", req.RemoteAddr)
 	fmt.Fprintf(w, "hello, my name is service1~\n")
 }
 
